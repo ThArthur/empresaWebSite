@@ -1,5 +1,5 @@
 import { Switch } from 'react-router-dom';
-import Route from './Routes';
+import Route from './Route';
 
 import SignIn from '../pages/SignIn';
 import SignUp from '../pages/SignUp';
