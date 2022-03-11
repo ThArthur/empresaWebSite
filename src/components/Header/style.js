@@ -56,6 +56,7 @@ export const HamburgerMenu = styled.div`
                 position: absolute;
                 margin: 0;
             }
+            
             >:nth-child(2){
                 margin-top: 5px;
                 display: none;
@@ -66,7 +67,6 @@ export const HamburgerMenu = styled.div`
                 position: absolute;
                 margin: 0;
             }
-
         }
     }
 `;

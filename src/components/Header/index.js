@@ -13,7 +13,7 @@ export default function Header() {
 
     return (
         <Container>
-            <HamburgerMenu menuActive={menuActive} onClick={() => setMenuActive(!menuActive)}>
+            <HamburgerMenu menuActive={menuActive} onClick={() => {setMenuActive(!menuActive)}}>
                 <div></div>
                 <div></div>
                 <div></div>
@@ -28,11 +28,11 @@ export default function Header() {
                     <FiHome color="#000" size={14}/>
                     <label>Chamados</label>
                 </Link>
-                <Link to="/dashboard">
+                <Link to="/clients">
                     <FiUsers color="#000" size={14}/>
                     <label>Clientes</label>
                 </Link>
-                <Link to="/dashboard">
+                <Link to="/settings">
                     <FiSettings color="#000" size={14}/>
                     <label>Settings</label>
                 </Link>
