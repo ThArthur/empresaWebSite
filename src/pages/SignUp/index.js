@@ -1,6 +1,6 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
-
+import { AuthContext } from '../../contexts/auth'
 import { Container, LoginForm, Button } from './style'
 
 import imageSigIn from '../../assets/imageSigIn.png'
@@ -11,9 +11,14 @@ export default function SignUp() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
+  const { signUp } = useContext(AuthContext);
+
   function handleSubmit(e){
     e.preventDefault();
-    alert('Click');
+
+    if(nome !== '' && email !== '' && password !== ''){
+      signUp(email, password, nome);
+    }
   }
 
   return (
@@ -30,9 +35,6 @@ export default function SignUp() {
           <input placeholder="exemplo@gmail.com" value={email} onChange={(e) => setEmail(e.target.value)}/>
 
           <label>Password</label>
-          <input type="password" placeholder="******" value={password} onChange={(e) => setPassword(e.target.value)}/>
-
-          <label>Confirm Password</label>
           <input type="password" placeholder="******" value={password} onChange={(e) => setPassword(e.target.value)}/>
 
           <Button type="submit">

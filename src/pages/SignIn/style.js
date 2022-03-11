@@ -24,7 +24,6 @@ export const Container = styled.div`
 
         div{
             flex: 3;
-            
         }
     }
 `;
@@ -61,6 +60,11 @@ export const LoginForm = styled.form`
         border-style: solid;
         border-width: 1px;
     }
+    
+    div{
+        display: flex;
+        margin-top: 20px;
+    }
 
     font-family: 'Roboto', sans-serif;
     display: flex;
@@ -75,12 +79,23 @@ export const Button = styled.button`
     background-color: #04C35C;
     border-radius: 5px;
     border-style: none;
+    cursor: pointer;
+    
     label{
 
         color: white;
+    }
+
+    :hover{
+        border-style: solid;
+        border-color: green;
     }
 `;
 
 export const ButtonRegister = styled(Button)`
     background-color: #22201F;
+
+    :hover{
+        border-style: none;
+    }
 `;

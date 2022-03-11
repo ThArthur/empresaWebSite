@@ -1,5 +1,6 @@
-import { useState } from "react";
-
+import { useState, useContext } from "react";
+import { Link } from "react-router-dom";
+import { AuthContext } from "../../contexts/auth";
 import { Container, LoginForm, Button, ButtonRegister } from './style'
 
 import imageSigIn from '../../assets/imageSigIn.png'
@@ -9,9 +10,14 @@ export default function SignIn() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
+  const { singIn } = useContext(AuthContext);
+
   function handleSubmit(e){
     e.preventDefault();
-    alert('Click');
+    
+    if(email !== '' && password !== ''){
+      singIn(email, password);
+    }
   }
 
   return (
@@ -35,6 +41,10 @@ export default function SignIn() {
           <ButtonRegister type="button">
             <label>Sign-in with google</label>
           </ButtonRegister>
+
+          <div>
+            <Link to="/register">Create an account</Link>
+          </div>
 
         </LoginForm>
       </div>
