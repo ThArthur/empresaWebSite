@@ -13,7 +13,6 @@ export default function Dashboard() {
         <Header/>
         <Content>
           <TittlePage nomeTitulo="Dashboard"/>
-          A
         </Content>
       </Container>
       

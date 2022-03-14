@@ -85,17 +85,4 @@ export const Button = styled.button`
 
         color: white;
     }
-
-    :hover{
-        border-style: solid;
-        border-color: green;
-    }
-`;
-
-export const ButtonRegister = styled(Button)`
-    background-color: #22201F;
-
-    :hover{
-        border-style: none;
-    }
 `;

@@ -126,6 +126,29 @@ export const DivLinks = styled.div`
         }
     }
 
+    div{
+        padding: 16px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        color: white;
+        font-size: 14px;
+        cursor: pointer;
+            
+        label{
+            padding-left: 10px;
+            font-weight: bold;
+            cursor: pointer;
+            color: #000;
+        }
+
+        :hover{
+            background-color: #f0f2f5;
+            transition: all .4s ease-in-out;
+            box-shadow: 0 0 .1em #000;
+        }
+    }
+
     @media screen and (max-width: 800px){
         a{
             display: none;

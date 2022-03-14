@@ -8,7 +8,7 @@ import { FiHome, FiUsers, FiSettings } from "react-icons/fi";
 
 export default function Header() {
 
-    const { user } = useContext(AuthContext);
+    const { user, signOut } = useContext(AuthContext);
     const [menuActive, setMenuActive] = useState(false);
 
     return (
@@ -36,6 +36,9 @@ export default function Header() {
                     <FiSettings color="#000" size={14}/>
                     <label>Perfil</label>
                 </Link>
+                <div onClick={() => signOut()}>
+                    <label>Sair da conta</label>
+                </div>
             </DivLinks>
         </Container>
         

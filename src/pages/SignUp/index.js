@@ -38,11 +38,11 @@ export default function SignUp() {
           <input type="password" placeholder="******" value={password} onChange={(e) => setPassword(e.target.value)}/>
 
           <Button type="submit">
-            <label>Create now</label>
+            <label>Criar agora</label>
           </Button>
           
           <div>
-            <Link to="/">Already have an account</Link>
+            <Link to="/">Já tenho uma conta</Link>
           </div>
 
         </LoginForm>

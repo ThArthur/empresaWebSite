@@ -1,7 +1,7 @@
 import { useState, useContext } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../contexts/auth";
-import { Container, LoginForm, Button, ButtonRegister } from './style'
+import { Container, LoginForm, Button } from './style'
 
 import imageSigIn from '../../assets/imageSigIn.png'
 
@@ -38,12 +38,8 @@ export default function SignIn() {
             <label>Login now</label>
           </Button>
 
-          <ButtonRegister type="button">
-            <label>Sign-in with google</label>
-          </ButtonRegister>
-
           <div>
-            <Link to="/register">Create an account</Link>
+            <Link to="/register">Criar uma conta</Link>
           </div>
 
         </LoginForm>
