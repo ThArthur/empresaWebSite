@@ -6,7 +6,7 @@ export const Container = styled.div`
     height: 100vh;
     position: fixed;
     overflow: auto;
-    background-color: #FFFF;
+    background-color: aliceblue;
     font-family: 'Roboto';
     box-shadow: 0 0 1em #000;
 
@@ -92,6 +92,9 @@ export const ImageDiv = styled.div`
     label{
         margin-top: 20px;
         font-weight: bold;
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: center;
     }
 
     @media screen and (max-width: 800px){

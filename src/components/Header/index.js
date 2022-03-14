@@ -32,9 +32,9 @@ export default function Header() {
                     <FiUsers color="#000" size={14}/>
                     <label>Clientes</label>
                 </Link>
-                <Link to="/settings">
+                <Link to="/profile">
                     <FiSettings color="#000" size={14}/>
-                    <label>Settings</label>
+                    <label>Perfil</label>
                 </Link>
             </DivLinks>
         </Container>
